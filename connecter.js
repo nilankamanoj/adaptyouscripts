@@ -71,13 +71,9 @@ if (!window.location.hash) {
     xhr.send(data);
 }
 else {
-    elmId = "default_loader";
-    document.getElementById(elmId).innerHTML += ' <input id="clickMe" type="button" value="load adapt view" onclick="loadAdapt();" />'
-    document.getElementById(elmId).style.width = '100%';
-    document.getElementById(elmId).style.padding = '10px';
-    document.getElementById("clickMe").style.backgroundColor = '#6ff285';
-    document.getElementById("clickMe").style.padding = '8px 10px';
-    document.getElementById("clickMe").style.marginLeft = '1000px'
+    elmId = "adapt_info";
+    document.getElementById(elmId).innerHTML += ' <input id="clickMe" class ="cntrl-btn"  type="button" value="load adapt view" onclick="loadAdapt();" />'
+    
 
 }
 
