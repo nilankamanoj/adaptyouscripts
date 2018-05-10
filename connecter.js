@@ -72,7 +72,7 @@ if (!window.location.hash) {
 }
 else {
     elmId = "adapt_info";
-    document.getElementById(elmId).innerHTML += ' <input id="clickMe" class ="cntrl-btn"  type="button" value="load adapt view" onclick="loadAdapt();" />'
+    document.getElementById(elmId).innerHTML += '<div class = "ctrl-bar" > content can be adapted <strong>ADAPTIVE UI GENERATOR</strong> <input id="clickMe" class = "cntrl-btn" type="button" value="Adapt View" onclick="loadAdapt();" /></div>'
     
 
 }
