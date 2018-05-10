@@ -1,5 +1,5 @@
 var data = "user=" + username;
-addCss('style.css');
+addCss('https://auscripts.herokuapp.com/styles.css');
 if (!window.location.hash) {
 
 
