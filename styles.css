@@ -27,7 +27,8 @@
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
-    animation-duration: 0.4s
+    animation-duration: 0.4s;
+   
 }
 
 /* Add Animation */
@@ -57,9 +58,10 @@
 }
 
 .modal-header {
-    padding: 2px 16px;
+    padding: 4px 16px;
     background-color: #5cb85c;
     color: white;
+    font-size: 20px;
 }
 
 .modal-body {padding: 2px 16px;}
@@ -95,24 +97,38 @@
 .default-btn{
     cursor : pointer;
     background: #c2d7f9;
-    padding : 2px;
+    padding : 4px;
+    color: black;
+    font-size: 13px
 }
 .default-btn:hover{
     cursor : pointer;
     background: #337ef7;
     padding : 2px;
+    padding : 4px;
+    color: black;
+    font-size: 13px;
     
 }
 .view-one-btn{
     cursor : pointer;
-    background: #c2d7f9;
-    padding : 2px;
+    background: #c2d7f9;    
+    padding : 4px;
+    color: black;
+    font-size: 13px
 }
 .view-one-btn:hover{
     cursor : pointer;
     background: #337ef7;
-    padding : 2px;
+    padding : 4px;
+    color: black;
+    font-size: 13px
 }
 .cntrl-indicator{
     height : 20px;
+}
+.modal p{
+    padding : 4px;
+    color: black;
+    font-size: 15px
 }
