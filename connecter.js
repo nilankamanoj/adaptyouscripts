@@ -23,13 +23,13 @@ if (!window.location.hash) {
                             //node.remove();
                             deleted.push(elements[i]);
                             delete elements[i];
-                            
+
                         }
                     }
-                    
+
                     var controlStr = "";
                     for (var i = 0; i < deleted.length; i++) {
-                        controlStr += "<div id = 'ctrl_li' class = 'view-one-btn' onclick = 'viewOne(\"" + deleted[i] + "\");' >" + document.getElementById(deleted[i]).title + "</div>";
+                        controlStr += "<div id = 'ctrl_li' class = 'view-one-btn' onclick = 'viewOne(\"" + deleted[i] + "\");' >" + document.getElementById(deleted[i]).title + "<div class = 'cntrl-indicator' id = 'indicator-"+deleted[i] +"'></div></div>";
                     }
                     console.log(controlStr)
                     document.getElementById('adapt_info').innerHTML = "<div id='default_loader'></div>"
@@ -53,7 +53,7 @@ if (!window.location.hash) {
                     elmId = "default_loader";
                     var elem = document.getElementById(elmId);
                     document.getElementById(elmId).innerHTML += '<div class = "ctrl-bar" > content edited by the <strong>ADAPTIVE UI GENERATOR</strong> <input id="clickMe" class = "cntrl-btn" type="button" value="Control View" onclick="loadUtil();" /></div>'
-                    
+
 
 
 
@@ -73,7 +73,7 @@ if (!window.location.hash) {
 else {
     elmId = "adapt_info";
     document.getElementById(elmId).innerHTML += '<div class = "ctrl-bar" > content can be adapted <strong>ADAPTIVE UI GENERATOR</strong> <input id="clickMe" class = "cntrl-btn" type="button" value="Adapt View" onclick="loadAdapt();" /></div>'
-    
+
 
 }
 
@@ -165,12 +165,12 @@ function sendData(id, difference) {
 
 function addCss(fileName) {
 
-  var head = document.head;
-  var link = document.createElement("link");
+    var head = document.head;
+    var link = document.createElement("link");
 
-  link.type = "text/css";
-  link.rel = "stylesheet";
-  link.href = fileName;
+    link.type = "text/css";
+    link.rel = "stylesheet";
+    link.href = fileName;
 
-  head.appendChild(link);
+    head.appendChild(link);
 }
