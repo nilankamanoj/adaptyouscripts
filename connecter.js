@@ -29,7 +29,7 @@ if (!window.location.hash) {
 
                     var controlStr = "";
                     for (var i = 0; i < deleted.length; i++) {
-                        controlStr += "<tr><div id = 'ctrl_li' class = 'view-one-btn' onclick = 'viewOne(\"" + deleted[i] + "\");' >" + document.getElementById(deleted[i]).title + "<div class = 'cntrl-indicator' id = 'indicator-"+deleted[i] +"'></div></div></tr>";
+                        controlStr += "<div id = 'ctrl_li' class = 'view-one-btn' onclick = 'viewOne(\"" + deleted[i] + "\");' >" + document.getElementById(deleted[i]).title + "</div>";
                     }
                     console.log(controlStr)
                     document.getElementById('adapt_info').innerHTML = "<div id='default_loader'></div>"
